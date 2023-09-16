@@ -3,8 +3,6 @@
 * {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-weight: 300;
-    /* margin: 0;
-    padding: 0; */
 }
 
 .container {
@@ -12,7 +10,7 @@
     flex-direction: column;
     width: 100%;
     max-width: 500px;
-    /* Ensure the container does not exceed the viewport width */
+    /* Ensures that the container does not exceed 500px width */
     margin: 0 auto
         /* Places the container in the center of the screen */
     ;
@@ -108,10 +106,7 @@ p {
 }
 
 #degree {
-    /* position: relative; */
     font-size: 38px;
-    /* top: 20px; */
-    /* Positions the degree symbol correctly */
 }
 
 .button-container {
@@ -146,11 +141,11 @@ p {
 }
 
 #searchIconOutsideBtn {
-    display: flex;
     z-index: 1;
     height: 40px;
     width: 40px;
     margin: 1rem;
+    cursor: pointer;
 }
 
 #searchButton {
@@ -170,7 +165,6 @@ p {
 }
 
 .search-bar input {
-    /* display: none; */
     background: white;
     border-radius: 50px 0 0 50px;
     border: white solid;

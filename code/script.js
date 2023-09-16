@@ -194,11 +194,6 @@ const createTable = (dailyTemperatures) => {
     }
 };
 
-const showSearchBar = () => {
-    console.log("Button is clicked");
-    // searchBar.style.display = "flex";
-}
-
 // Utility function to insert styling easier
 function insertStyle(code) {
     var style = document.createElement("style");
@@ -206,4 +201,13 @@ function insertStyle(code) {
     document.getElementsByTagName("head")[0].appendChild(style);
 };
 
-searchIconOutsideBtn.addEventListener("click", showSearchBar)
+
+
+searchIconOutsideBtn.addEventListener("click", () => {
+    console.log("Button clicked");
+    // searchBar.style.display = "flex";
+
+    // searchIconOutsideBtn.style.display = "none";
+});
+
+
