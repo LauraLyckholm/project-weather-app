@@ -5,8 +5,10 @@ const forecastSection = document.getElementById("fiveDayPrognosis");
 const sunUpDown = document.getElementById("sunUpDown");
 const locationSpecifics = document.getElementById("locationSpecifics");
 // const changeCityBtn = document.getElementById("changeBtn"); //Just testing the button
+const searchIconOutsideBtn = document.getElementById("searchIconOutsideBtn");
+const searchBar = document.querySelector(".search-bar");
 
-let cityToUrl = "Borås,Sweden";
+let cityToUrl = "Varberg,Sweden";
 const BASE_URL = "https://api.openweathermap.org/data/2.5/";
 const API_KEY = "6e3a3db02f585218db04cdc935f5290c";
 const weatherURL = `${BASE_URL}weather?q=${cityToUrl}&units=metric&APPID=${API_KEY}`;
@@ -192,9 +194,16 @@ const createTable = (dailyTemperatures) => {
     }
 };
 
+const showSearchBar = () => {
+    console.log("Button is clicked");
+    // searchBar.style.display = "flex";
+}
+
 // Utility function to insert styling easier
 function insertStyle(code) {
     var style = document.createElement("style");
     style.innerHTML = code;
     document.getElementsByTagName("head")[0].appendChild(style);
 };
+
+searchIconOutsideBtn.addEventListener("click", showSearchBar)
